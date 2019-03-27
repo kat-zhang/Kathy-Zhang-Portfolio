@@ -1,0 +1,42 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #FFE3F0;
+    text-decoration: none;
+}
+
+#top-accent {
+    background-color: #FFE3F0;
+    height: 40px;
+}
+#header-container {
+    margin: auto;
+
+}
+#my-navbar {
+    margin-top: 40px;
+    /* border: solid 5px green; */
+   max-width: 980px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#my-name {
+    font-family: 'Staatliches', cursive;
+    font-size: 60px;
+    /* border: solid 1px red; */
+    /* display: inline-block; */
+}
+#my-links {
+    /* display: inline-block; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    /* border: solid 1px blue; */
+    /* padding-bottom: 20px; */
+    padding-top: 20px;
+    
+}
