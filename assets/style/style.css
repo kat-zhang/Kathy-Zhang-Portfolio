@@ -4,13 +4,33 @@
 
 
 
-a {
+a{
     color: black;
     text-decoration: none;
 }
+
 a:hover {
-    color: #FFE3F0;
+    color: #FFDEED;
     text-decoration: none;
+}
+
+.fab {
+    color: #FFDEED
+}
+.fab:hover{
+    color: black;
+}
+.pink-button {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFDEED;
+    border:  #FFDEED;
+    color: white;
+    width: 120px;
+
+}
+.pink-button:hover{
+    color: black;
 }
 
 #top-accent {
@@ -23,7 +43,7 @@ a:hover {
 }
 #my-navbar {
     margin-top: 40px;
-    border: solid 5px green;
+    /* border: solid 5px green; */
     max-width: 980px;
     margin-top: 20px;
     margin-right: auto;
@@ -34,25 +54,40 @@ a:hover {
 #my-name {
     font-family: 'Staatliches', cursive;
     font-size: 60px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     /* display: inline-block; */
 }
 #my-links {
     /* display: inline-block; */
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     /* padding-bottom: 20px; */
     padding-top: 20px;
     
 }
 
-@media screen and (max-width: 980px) {
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
     #my-navbar {
-    
         width: 80%
-
     }
+}
 
+@media screen and (max-width: 980px) {
+    #my-navbar{
+        display: block;
+    }
+    
+    #my-name,#my-links {
+        /* display: block; */
+        text-align: center;
+    }
+    #my-links {
+       padding-top:10px;
+       padding-bottom:10px;
+    }
+    
 }
 
