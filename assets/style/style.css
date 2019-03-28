@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
 
 a{
     color: black;
@@ -36,7 +39,7 @@ a:hover {
 #top-accent {
     background-color: #FFE3F0;
     height: 40px;
-    width: 100%;
+    min-width: 100%;
 }
 #header-container {
     margin: auto;
@@ -144,6 +147,7 @@ a:hover {
     display: inline-block;
     border-radius: 50%;
     height: 232px;
+    
 }
 #bio-text {
     display: inline-block;
@@ -152,21 +156,41 @@ a:hover {
     width: 680px;
     padding-top: 30px;
     padding-right: 30px;
+    padding-left:30px;
     text-align: justify;
     text-justify: inter-word;
+    text-indent: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
     
 }
+
 /* Media Queries */
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     #my-navbar {
         width: 80%;
         text-align: center;
     }
-   
-}
-
+} */
+@media screen and (max-width: 980px) {
+    #bio-box{
+        display: block;
+        /* justify-content: center; */
+        width: 100%;
+    }
+    #pic-holder,#bio-text {
+        width: 100%;
+    }
+    
+} 
 @media screen and (max-width: 440px) {
+    #my-navbar {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
     #my-links {
         display: none;
     }
@@ -181,9 +205,22 @@ a:hover {
         width: 100%;
         margin: auto;
     }
-    
+
+    /* #my-pic {
+        height:185px;
+        display: block;
+    } */
+    /* #bio-text {
+        display: block;
+    } */
 }
 
+@media screen and (max-width: 320px) {
+    #my-name {
+        font-size: 48px;
+    }
+     
+}
 
     /* #my-navbar{
         display: block;
@@ -201,9 +238,4 @@ a:hover {
 }
 
 
-@media screen and (max-width: 320px) {
-   #my-name {
-       font-size: 48px;
-   }
-    
-}
+
