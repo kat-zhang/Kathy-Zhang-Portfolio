@@ -155,6 +155,12 @@ a:hover {
 .content-box{
     height: 300px;
 }
+.thumb {
+    border: solid 3px green;
+}
+.info {
+    border: solid 3px purple;
+}
 #card-box{
     height: 200px;
 }
