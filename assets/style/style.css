@@ -4,7 +4,6 @@
 
 body {
     width: 100%;
-
     overflow: visible;
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +49,15 @@ a:hover {
     height: 40px;
     min-width: 100%;
 }
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height:40px;
+    background-color: #FFDEED;
+}
+
 
 #header-container {
     margin: auto;
@@ -57,7 +65,7 @@ a:hover {
 
 #my-navbar {
     margin-top: 40px;
-    border: solid 5px green;
+    /* border: solid 5px green; */
     max-width: 980px;
     margin-top: 20px;
     margin-right: auto;
@@ -70,8 +78,7 @@ a:hover {
 #my-name {
     font-family: 'Staatliches', cursive;
     font-size: 60px;
-    /* border: solid 1px red; */
-    /* display: inline-block; */
+  
 }
 
 #my-name:hover {
@@ -79,12 +86,8 @@ a:hover {
 }
 
 #my-links {
-    /* display: inline-block; */
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    /* border: solid 1px blue; */
-    /* padding-bottom: 20px; */
-
 }
 
 #mobile-links {
@@ -124,7 +127,6 @@ a:hover {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-
 }
 
 .dropdown-content a:hover {
@@ -140,16 +142,21 @@ a:hover {
     background-color: #FFDEED;
 }
 
-#bio-box, #trigger-container {
-    border: solid 1px orange;
+.content-box, #trigger-container {
     max-width: 980px;
     margin: auto;
-    /* height: 300px; */
     display: flex;
+    border: 1px solid orange;
 
 }
-#bio-box {
+#main-container {
+    overflow: auto;
+}
+.content-box{
     height: 300px;
+}
+#card-box{
+    height: 200px;
 }
 #trigger-container {
     height: 60px;
@@ -158,25 +165,24 @@ a:hover {
     width: 160px;
     height: 40px;
     margin: auto;
+    width:160px;
+    display: inline-block;
 }
 #pic-holder {
-    border: solid 1px hotpink;
     height: 250px;
     width: 300px;
     text-align: center;
-
 }
 
 #my-pic {
     display: inline-block;
     border-radius: 50%;
-    height: 232px;
+    height: 250px;
 }
 
 #bio-text {
     display: inline-block;
-    border: solid 1px turquoise;
-    width: 680px;
+    width: 600px;
     height: 250px;
     padding-top: 30px;
     padding-right: 30px;
@@ -190,11 +196,6 @@ a:hover {
     line-height: 32px;
 }
 
-#resume-trigger {
-    width:160px;
-    display: inline-block;
-    
-}
 
 /* Media Queries */
 
@@ -205,7 +206,7 @@ a:hover {
     }
 } */
 @media screen and (max-width: 980px) {
-    #bio-box {
+    .content-box {
         display: block;
         width: 100%;
     }
@@ -214,10 +215,38 @@ a:hover {
     #bio-text {
         width: 100%;
     }
+
+    #my-navbar {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #my-links {
+        display: none;
+    }
+  
+    #mobile-links {
+        visibility: visible;
+    }
+
+    .dropdown {
+        margin: auto;
+        display: block;
+    }
+
+    .dropbtn {
+        width: 100%;
+        margin: auto;
+    }
+    
+    #trigger-container {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 440px) {
-    #my-navbar {
+    /* #my-navbar {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
@@ -239,7 +268,7 @@ a:hover {
     .dropbtn {
         width: 100%;
         margin: auto;
-    }
+    } */
 
     #pic-holder {
         height: 200px;
