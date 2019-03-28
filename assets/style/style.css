@@ -27,6 +27,7 @@ a:hover {
     color:black;
     width: 120px;
 
+
 }
 .pink-button:hover{
     color:white;
@@ -35,6 +36,7 @@ a:hover {
 #top-accent {
     background-color: #FFE3F0;
     height: 40px;
+    width: 100%;
 }
 #header-container {
     margin: auto;
@@ -42,13 +44,12 @@ a:hover {
 }
 #my-navbar {
     margin-top: 40px;
-    /* border: solid 5px green; */
+    border: solid 5px green;
     max-width: 980px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
-    /* display: flex;
-    justify-content: space-between; */
+    margin-bottom: 50px;
     display: block;
     text-align: center;
 }
@@ -67,7 +68,6 @@ a:hover {
     font-size: 30px;
     /* border: solid 1px blue; */
     /* padding-bottom: 20px; */
-    padding-top: 20px;
     
 }
 
@@ -124,32 +124,47 @@ a:hover {
     background-color: #FFDEED;
 }
 
+
+#bio-box {
+    border: solid 1px orange;
+    width: 980px;
+    margin:auto;
+    height: 700px;
+    display: flex;
+}
+
+#pic-holder {
+    border: solid 1px hotpink;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+   
+}
+#my-pic{
+    display: inline-block;
+    border-radius: 50%;
+    height: 232px;
+}
+#bio-text {
+    display: inline-block;
+    border: solid 1px turquoise;
+    height: 300px;
+    width: 680px;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
     #my-navbar {
         width: 80%;
-        margin: auto;
         text-align: center;
     }
    
 }
-
-/* @media screen and (max-width: 980px) { */
-    /* #my-navbar{
-        display: block;
-    } */
-    
-    /* #my-name,#my-links { */
-        /* display: block; */
-        /* text-align: center;
-    } */
-    /* #my-links {
-       padding-top:10px;
-       padding-bottom:10px;
-    }
-   
-} */
 
 @media screen and (max-width: 440px) {
     #my-links {
@@ -168,6 +183,24 @@ a:hover {
     }
     
 }
+
+
+    /* #my-navbar{
+        display: block;
+    } */
+    
+    /* #my-name,#my-links { */
+        /* display: block; */
+        /* text-align: center;
+    } */
+    /* #my-links {
+       padding-top:10px;
+       padding-bottom:10px;
+    }
+   
+}
+
+
 @media screen and (max-width: 320px) {
    #my-name {
        font-size: 48px;
