@@ -44,6 +44,10 @@ a:hover {
     color: white;
 }
 
+
+#contact-note {
+    text-align: center;
+}
 #top-accent {
     background-color: #FFE3F0;
     height: 40px;
@@ -157,6 +161,18 @@ a:hover {
 }
 .content-box{
     height: 300px;
+}
+
+.contact-note {
+    margin: auto;
+}
+.email-note {
+    text-align: center;
+}
+.email-btn-holder {
+    margin-top: 30px;
+    text-align: center;
+
 }
 /* .thumb {
     border: solid 3px green;

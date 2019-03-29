@@ -221,6 +221,11 @@ a:hover {
     text-align: center;
 }
 
+.live-link:hover {
+    text-transform: uppercase;
+    color: black;
+}
+
 
 /* Media Queries */
 
