@@ -31,7 +31,6 @@ a:hover {
 
 .pink-button {
     text-transform: uppercase;
-    /* font-family: 'Open Sans', sans-serif; */
     background-color: #FFDEED;
     border: #FFDEED;
     color: black;
@@ -44,7 +43,6 @@ a:hover {
 }
 .git-link {
     text-transform: uppercase;
-    /* font-family: 'Open Sans', sans-serif; */
     background-color: #FFDEED;
     border: #FFDEED;
     color: black;
@@ -64,7 +62,6 @@ a:hover {
     min-width: 100%;
 }
 #footer {
-    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
@@ -138,7 +135,6 @@ a:hover {
 
 .dropdown-content a {
     color: black;
-    /* font-family: 'Open Sans', sans-serif; */
     font-size: 18px;
     padding: 12px 16px;
     text-decoration: none;
@@ -163,7 +159,7 @@ a:hover {
     max-width: 980px;
     margin: auto;
     display: flex;
-    border: 1px solid orange;
+
 
 }
 #main-container {
@@ -172,44 +168,43 @@ a:hover {
 .content-box{
     height: 300px;
 }
-/* .thumb {
-    border: solid 3px green;
-}
-.info {
-    border: solid 3px purple;
-} */
 
-.project-card {
-    display: inline-block;
-    width: 500px;
-    margin-left: 100px;
-    height: 280px;
-    border: none;
+#card-box{
+    height: 300px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.thumb-holder {
+    margin: auto;
+
 }
 .project-thumb {
     display: inline-block;
     width: 250px;
     border-radius: 50%
 }
-/* .proj-info {
-    display: inline-block;
-    border: solid 1px hotpink;
-} */
+
 .project-title {
-   background-color: #FFDEED;
+    background-color: #FFDEED;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-   
+    padding-top: 3px;
+    padding-bottom: 3px;
+ 
+ }
+.project-card {
+    display: inline-block;
+    width: 500px;
+    margin: auto;
+    height: auto;
+    /* border: none; */
 }
-.project-thumb:hover {
-    border-radius: 0%
+.git-line {
+    height: 80px;
 }
-#card-box{
-    height: 300px;
-    display: flex;
-   
-}
+
 #trigger-container {
     height: 60px;
 }
@@ -226,37 +221,9 @@ a:hover {
     text-align: center;
 }
 
-#my-pic {
-    display: inline-block;
-    border-radius: 50%;
-    height: 250px;
-}
-
-#bio-text {
-    display: inline-block;
-    width: 600px;
-    height: 250px;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    text-align: justify;
-    text-justify: inter-word;
-    text-size-adjust: auto;
-    text-indent: 2rem;
-    /* font-family: 'Open Sans', sans-serif; */
-    font-size: 18px;
-    line-height: 32px;
-}
-
 
 /* Media Queries */
 
-/* @media screen and (max-width: 1200px) {
-    #my-navbar {
-        width: 80%;
-        text-align: center;
-    }
-} */
 @media screen and (max-width: 980px) {
     .content-box {
         display: block;
@@ -267,10 +234,7 @@ a:hover {
     #bio-text {
         width: 100%;
     }
-    /* .thumb-holder {
-        text-align: center;
-        width: 100%;
-    } */
+
     #my-navbar {
         width: 80%;
         margin-right: auto;
@@ -302,41 +266,63 @@ a:hover {
         padding-top: 0px;
        
     }
-    .project-thumb {
-        /* margin-left: 20px; */
-        /* display: inline-block; */
 
+    .project-card {
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    /* .project-card {
-        display: inline-block;
-        width: 400px;
-    } */
 
 }
-@media screen and (max-width: 720px) {
-  
-}
-@media screen and (max-width: 440px) {
-    /* #my-navbar {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    #my-links {
-        display: none;
-    }
-    #mobile-links {
-        visibility: visible;
-    }
-    .dropdown {
-        margin: auto;
+@media screen and (max-width: 780px) {
+    .thumb-holder {
+        margin-left: 15px;
         display: block;
     }
-    .dropbtn {
-        width: 100%;
-        margin: auto;
-    } */
+    .project-thumb {
+        width: 200px;
+        text-align: center;
+        
+    }
+    
+}
+@media screen and (max-width: 760px) {
+    .thumb-holder {
+        margin-left: 15px;
+        display: block;
+    }
 
+    .project-thumb {
+        width: 150px;
+        text-align: center;
+        /* padding-left: 15px; */
+        
+    }
+    .project-title {
+     font-size: 16px;
+    
+ }
+    .project-card {
+        width: 525px;
+    }
+    .list-group-item {
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+  
+ .thumb-holder {
+     display: none;
+ }
+   .project-card {
+    width: 100%;
+
+   }
+}
+@media screen and (max-width: 440px) {
+    #my-name {
+        font-size: 40px;
+    }
     #pic-holder {
         height: 200px;
     }
@@ -344,7 +330,7 @@ a:hover {
     #my-pic {
         height: 185px;
     }
-
+  
     #bio-text {
         font-size: 14px;
         line-height: 20px;
@@ -353,10 +339,10 @@ a:hover {
         text-align: center;
         width: 100%;
     }
-    .project-thumb {
-        width: 150px;
-        margin-left: 0px
+    .content-box{
+        height: auto;
     }
+  
 }
 
 @media screen and (max-width: 320px) {
@@ -366,17 +352,3 @@ a:hover {
 
 }
 
-/* #my-navbar{
-        display: block;
-    } */
-
-/* #my-name,#my-links { */
-/* display: block; */
-/* text-align: center;
-    } */
-/* #my-links {
-       padding-top:10px;
-       padding-bottom:10px;
-    }
-   
-}
