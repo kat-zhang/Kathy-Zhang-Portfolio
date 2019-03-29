@@ -4,7 +4,7 @@
 
 body {
     width: 100%;
-    overflow: visible;
+    overflow: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
@@ -172,7 +172,9 @@ a:hover {
     border-radius: 0%
 }
 #card-box{
-    height: 200px;
+    height: 350px;
+    padding-top: 40px;
+   
 }
 #trigger-container {
     height: 60px;
@@ -231,10 +233,10 @@ a:hover {
     #bio-text {
         width: 100%;
     }
-    .thumb-holder {
+    /* .thumb-holder {
         text-align: center;
         width: 100%;
-    }
+    } */
     #my-navbar {
         width: 80%;
         margin-right: auto;
@@ -262,8 +264,15 @@ a:hover {
     #trigger-container {
         display: none;
     }
-}
+   
+    .project-thumb {
+        margin-left: 20px;
+    }
 
+}
+@media screen and (max-width: 720px) {
+  
+}
 @media screen and (max-width: 440px) {
     /* #my-navbar {
         width: 80%;
@@ -296,6 +305,14 @@ a:hover {
     #bio-text {
         font-size: 14px;
         line-height: 20px;
+    }
+    .thumb-holder {
+        text-align: center;
+        width: 100%;
+    }
+    .project-thumb {
+        width: 150px;
+        margin-left: 0px
     }
 }
 
