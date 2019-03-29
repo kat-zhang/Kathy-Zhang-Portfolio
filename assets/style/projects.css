@@ -342,7 +342,9 @@ a:hover {
     .content-box{
         height: auto;
     }
-  
+  #card-box {
+      margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 320px) {
