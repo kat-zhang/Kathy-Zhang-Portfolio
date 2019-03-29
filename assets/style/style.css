@@ -145,7 +145,7 @@ a:hover {
     background-color: #FFDEED;
 }
 
-.content-box, #trigger-container, .card-box {
+.content-box, #trigger-container {
     max-width: 980px;
     margin: auto;
     display: flex;
@@ -158,23 +158,11 @@ a:hover {
 .content-box{
     height: 300px;
 }
-
-/* .card-box {
-    height:
-} */
-
-/* .thumb {
+.thumb {
     border: solid 3px green;
 }
 .info {
     border: solid 3px purple;
-} */
-/* #card-box{
-    height: 250px;
-} */
-
-.thumb-holder {
-  
 }
 .project-thumb {
     width: 250px;
@@ -183,29 +171,9 @@ a:hover {
 .project-thumb:hover {
     border-radius: 0%
 }
-
-.project-card {
-    height: 250px;
-  
-   
+#card-box{
+    height: 200px;
 }
-card-header {
-    border-radius: 0%;
-}
-.project-title {
-    background-color: #FFDEED;
-    border-radius: 0%;
-
-}
-.git-line {
-    text-align: center;
-}
-.git-link {
-    width: 160px;
-
-}
-
-
 #trigger-container {
     height: 60px;
 }
@@ -260,7 +228,7 @@ card-header {
     }
 
     #pic-holder,
-    #bio-text,{
+    #bio-text {
         width: 100%;
     }
     .thumb-holder {
@@ -294,38 +262,24 @@ card-header {
     #trigger-container {
         display: none;
     }
-    
 }
-@media screen and (max-width: 760px) {
-    /* .thumb-holder {
-        width: 100%;
-    } */
-    .project-thumb {
-        width: 150px;
-        border-radius: 50%
-    }
 
-}
 @media screen and (max-width: 440px) {
     /* #my-navbar {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
     }
-
     #my-links {
         display: none;
     }
-
     #mobile-links {
         visibility: visible;
     }
-
     .dropdown {
         margin: auto;
         display: block;
     }
-
     .dropbtn {
         width: 100%;
         margin: auto;
@@ -343,10 +297,6 @@ card-header {
         font-size: 14px;
         line-height: 20px;
     }
-    /* .project-thumb {
-        width: 100px;
-        border-radius: 50%
-    } */
 }
 
 @media screen and (max-width: 320px) {
