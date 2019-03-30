@@ -79,7 +79,6 @@ a:hover {
 
 #my-navbar {
     margin-top: 40px;
-    /* border: solid 5px green; */
     max-width: 980px;
     margin-top: 20px;
     margin-right: auto;
@@ -100,7 +99,6 @@ a:hover {
 }
 
 #my-links {
-    /* font-family: 'Open Sans', sans-serif; */
     font-size: 30px;
 }
 
@@ -199,7 +197,6 @@ a:hover {
     width: 500px;
     margin: auto;
     height: auto;
-    /* border: none; */
 }
 .git-line {
     height: 80px;
